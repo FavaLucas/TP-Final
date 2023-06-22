@@ -1,1 +1,21 @@
 /* Comentario */
+:root{
+    --eden:#114c5f;
+    --sanMarino: #4a6eb0;
+    --bondiBlue: #0799cb;
+    --sinbad: #9cd2d3;
+    --alto: #d9d9d9;
+    --icons: #013B95;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--eden);
+}
+.icon-error{
+    width: 24px;
+    height: 24px;
+}

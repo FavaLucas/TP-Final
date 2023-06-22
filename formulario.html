@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <link rel="stylesheet" href="/TP-Final/formulario.css">
+    <title>To-do List</title>
 </head>
 <body>
 
+    <img src="/TP-Final/imagenes/web.png" alt="Logo" class="logo">
+
+    <h1>Listado de tareas dinámico</h1>
+    <h2>Ejercicio 2</h2>
+
+    <form action="#" id="userInput">
+        <input type="text" placeholder="Ingrese tema" autofocus>
+        <input type="submit" value="+" id="addBtn">
+    </form>
+
+    <div class="list-container" id="list">
+<!-- 
+        <div class="task-container" id="1">
+            <label>
+                <input type="checkbox">
+                Tarea 1
+            </label>
+            <img src="/TP-Final/imagenes/caja.png" class="closeBtn">
+        </div> 
+    -->
+    </div>
+
+        <div id="stats">
+            <!-- Tareas Pendientes: 5 Completadas: 3 -->
+        </div>
+
+
     <div>
-        <a href="/TP-Final/pagina.html">Web</a>
+        <a href="/TP-Final/pagina.html">Link a formulario</a>
     </div>
     
-    <div>
-        <ul>
-            <li>asdasdada</li>
-            <li>asdasdada</li>
-            <li>asdasdada</li>
-            <li>asdasdada</li>
-            <li>asdasdada</li>
-            <li>asdasdada</li>
-            <li>asdasdada</li>
-            <li>asdasdada</li>
-        </ul>
-    </div>
-    
+    <script src="/TP-Final/formulario.js"></script>
 </body>
 </html>

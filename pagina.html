@@ -18,28 +18,56 @@
     <script src="/TP-Final/pagina.js"></script>
 
     <title>Trabajo Final</title>
+
   </head>
 
   <body>
-    <div>
-      <a href="/TP-Final/formulario.html">Formulario</a>
+    <a href="/TP-Final/formulario.html">Link a To-Do List</a>
+    <div class="main-container">
+
+      <section>
+        <h1>Aca voy a tener que poner mi carrusel de imagenes</h1>
+        <div class="carrusel">Carrusel</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nisi odio maxime consectetur velit, laudantium minus porro non magnam dolore aperiam ipsam, totam officiis enim provident sint animi in consequuntur.
+        Et laudantium ullam quia, accusantium itaque repellendus consequatur quos fugit adipisci, delectatis.</p>
+      </section>
+
+      <section class="form-container">
+
+        <form action="">
+
+          <input id="firstNameInput" type="text" placeholder="Ingrese su nombre">
+          <div id="firstNameError" class="error-container">
+            <img class="icon-error" src="/TP-Final/imagenes/error.png" alt="Icono de Error">
+            <p>Complete su nombre!</p>
+          </div>
+
+          <input id="lastNameInput" type="text" placeholder="Ingrese su apellido">
+          <div id="lastNameError" class="error-container"></div>
+
+          <input id="emailInput" type="text" placeholder="Ingrese su email">
+          <div id="emailError" class="error-container"></div>
+
+          <input id="passInput" type="text" placeholder="Ingrese su contraseña">
+          <div id="passError" class="error-container"></div>
+
+          <input type="submit" value="Iniciar Sesion">
+
+        </form>
+
+        <p class="uiol">Desea registrarse en el curso DWFS? <a href="https://uiol.org.ar/escuela-it-cepit/" target="_blank">Haga click aqui.</a></p>
+        
+      </section>
+
     </div>
 
-    <div>
-      <label for="1">1</label>
-      <input type="text" />
-    </div>
-    <div>
-      <label for="2">2</label>
-      <input type="text" />
-    </div>
-    <div>
-      <label for="3">3</label>
-      <input type="text" />
-    </div>
-    <div>
-      <label for="4">4</label>
-      <input type="text" />
-    </div>
+    <footer>
+      <p class="attribution">
+        TP Coded by <a href="https://github.com/FavaLucas" target="_blank">Lucas Fava</a>
+      </p>
+    </footer>
+
+
+
   </body>
 </html>
