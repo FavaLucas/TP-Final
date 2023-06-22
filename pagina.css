@@ -14,7 +14,26 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: var(--eden);
+    /* background-image: url(/TP-Final/imagenes/fondoprogramacion.png); */
+    color: var(--alto);
 }
+.main-container{
+    width: 330px;
+    margin: 30px auto 40px;
+    border: 1px solid red;
+}
+h1{
+    width: 235px;
+    font-size: 1.73em;
+    line-height: 38px;
+    margin: -6px auto 16px;
+}
+.carrusel-container{
+    margin: 10px 10px 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
 .icon-error{
     width: 24px;
     height: 24px;

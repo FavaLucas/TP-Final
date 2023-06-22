@@ -4,7 +4,6 @@
     --bondiBlue: #0799cb;
     --sinbad: #9cd2d3;
     --alto: #d9d9d9;
-    --icons: #013B95;
 }
 *{
     margin: 0;
@@ -13,6 +12,7 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: var(--eden);
+    /* background-image: url(/TP-Final/imagenes/fondoprogramacion.png); */
 }
 .logo{
     width: 75px;
@@ -27,8 +27,6 @@ a{
     color: var(--alto);
     text-decoration:none;
     font-size: 1.1em;
-
-
 }
 
 h1{
