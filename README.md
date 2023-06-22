@@ -6,7 +6,7 @@ Trabajo Final Primer cuatrimestre
 
 Desarrolla una aplicación web de gestión de tareas (To-Do List) utilizando TypeScript, HTML, CSS y JavaScript.
 
-La aplicación debe permitir a los usuarios listar, crear, actualizar y eliminar tareas.
+La aplicación debe permitir a los usuarios listar, crear, actualizar y eliminar tareas.																		
 Recuerda que este ejercicio se puede realizar en etapas progresivas a lo que queda de cursada, a lo largo de los que podrás ir implementando mejoras.
 
 Parte 1 - Página estática:
