@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <!-- INICIO Script y Estilo para Carousel de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <!-- FIN Script y Estilo para Carousel de Bootstrap -->
+
+    <link rel="stylesheet" href="/TP-Final/paginaestatica.css" />
+    <title>Cursos Web</title>
+</head>
+
+<body>
+    <!-- ################### INICIO Div contenedor principal de toda la pagina web  ####################-->
+    <div class="main-container">
+
+        <!-- ////////////////////// INICIO Header ////////////////////////// -->
+        <header>
+            <div class="logo">
+                <img src="/TP-Final/imagenes/logo.png" alt="Codea Ya!">
+                <a href="#">Codea Ya!</a>
+            </div>
+            <div class="links">
+                <a href="#">Quienes somos</a>
+                <a href="#">Cursos On-Line</a>
+                <a href="#">Contacto</a>
+            </div>
+        </header>
+        <!-- ////////////////////// FIN Header ////////////////////////// -->
+
+        <!-- //////////////////////INICIO Seccion carousel ////////////////////-->
+
+        <section class="carousel-container">
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/TP-Final/imagenes/html-5.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Aprende con nosotros HTML</h5>
+                            <p>Te damos las herramientas para que des tus primeros pasos en HTML 5.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/TP-Final/imagenes/css-3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Aprende con nosotros CSS</h5>
+                            <p>En nuestros crusos vas a encotrar toda la informacion para obtener los mejores estilos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/TP-Final/imagenes/js.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vincula HTML y CSS y dales poder!</h5>
+                            <p>Con los tutoriales vas a encontrar todo para darle funcionalidad a tu web!.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <!--/////////////////////// FIN Seccion carousel /////////////////////////-->
+
+
+
+
+        <!-- /////////////////// Inicio Seccion de Informacion y Formulario //////////////////////// -->
+        <section class="main">
+            <article class="information">
+                <p>Aprende a programar desde 0 con nuestros cursos para principiantes.</p>
+                <p>Si estas arrancando y queres tener una guia paso a paso para poder salir adelante, te invitamos a que
+                    te anotes en nuestros cursos de nivel inicial.</p>
+                <p>Contamos con una plataforma educativa que brindara tutoriales, ejercicios, videos, material de
+                    consulta, acceso a foros de ayuda y mucho mas!</p>
+
+            </article>
+
+            <form class="form">
+                <input id="firstNameInput" type="text" placeholder="Ingrese su nombre">
+                <div id="firstNameError" class="error-container">
+                    <img class="icon-error" src="/TP-Final/imagenes/error.png" alt="Icono de Error">
+                    <p>Complete su nombre!</p>
+                </div>
+
+                <input id="lastNameInput" type="text" placeholder="Ingrese su apellido">
+                <div id="lastNameError" class="error-container"></div>
+
+                <input id="emailInput" type="text" placeholder="Ingrese su email">
+                <div id="emailError" class="error-container"></div>
+
+                <input id="passInput" type="text" placeholder="Ingrese su contraseña">
+                <div id="passError" class="error-container"></div>
+
+                <input type="submit" value="Iniciar Sesion">
+
+            </form>
+        </section>
+        <!-- /////////////////// Fin Seccion de Informacion y Formulario //////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ///////////////////////// Inicio Footer //////////////////////  -->
+        <footer class="footer-container">
+            <p>asdasdas</p>
+            <a href="#">asdasdasd</a>
+        </footer>
+        <!-- ///////////////////////// Fin Footer //////////////////////  -->
+
+    </div>
+    <!-- ###################  FIN contenedor principal de toda la pagina web ####################-->
+</body>
+
+</html>
