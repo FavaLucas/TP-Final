@@ -18,7 +18,7 @@ body{
     color: var(--alto);
 }
 .main-container{
-    width: 330px;
+    width: 430px;
     margin: 30px auto 40px;
     border: 1px solid red;
 }
