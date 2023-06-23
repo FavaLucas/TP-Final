@@ -1,10 +1,10 @@
-:root{
-    --tono1: #104f7c;
-    --tono2 : #286585;
-    --tono3 : #527f90;
-    --tono4 : #7c989d;
-    --tono5: #a0acab;
-/*
+:root {
+  --tono1: #104f7c;
+  --tono2: #286585;
+  --tono3: #527f90;
+  --tono4: #7c989d;
+  --tono5: #a0acab;
+  /*
 colores:
 .color1 {color: #104f7c;}
 .color2 {color: #286585;}
@@ -14,109 +14,140 @@ colores:
  */
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
 
-.main-container{
-    background-color: white;
-    width: 90%;
-    max-width: 1400px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    /* Opciones Flex -Contenedor Padre de toda la web*/
-    /* display: flex;
-    flex: row;
-    flex-wrap: wrap; */
+.main-container {
+  background-color: white;
+  width: 90%;
+  max-width: 1800px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Opciones Flex -Contenedor Padre de toda la web*/
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
 }
 header {
-    background-color: var(--tono1);
-    width: 100%;
-    padding: 10px;
-    /* Opciones Flex - Contenedor Padre de todos los elementos del header */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+  background-color: var(--tono1);
+  width: 100%;
+  padding: 10px;
+  /* Opciones Flex - Contenedor Padre de todos los elementos del header */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-header .logo img{
-    width: 50px;
-    vertical-align: top;
+header .logo img {
+  width: 50px;
+  vertical-align: top;
 }
-header .logo a{
-    line-height: 50px;
-    color: white;
-    text-decoration: none;
+header .logo a {
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
 }
-header a{
-    /* line-height: 50px; */
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
-    padding: 10px;
-    text-align: center;
-    /* Opciones Flex - Elemento HIJO */
-    flex-grow: 1;
+header a {
+  /* line-height: 50px; */
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 10px;
+  text-align: center;
+  /* Opciones Flex - Elemento HIJO */
+  flex-grow: 1;
 }
-header a:hover{
-    background-color: var(--tono5);
+header a:hover {
+  background-color: var(--tono5);
 }
-header .links{
-    width: 50%;
-    /* Opciones Flex - Contenedor padre de los Links*/
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center
+header .links {
+  width: 40%;
+  /* Opciones Flex - Contenedor padre de los Links*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 
-/* VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
-.carousel-container{
-    padding: 20px;
-    background-color: white;
-    width: 400px;
-    margin: 0 auto;
-}
-#carouselExampleCaptions{
-    width: 400px;
-    height: 400px;
-}
-.carousel-item h5, p{
-    color: black;
-}
-/* VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
 
-.main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+
+
+
+/* /////////////////VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
+.carousel-container {
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
 }
+#carouselExampleCaptions {
+  width: 400px;
+  height: 400px;
+}
+.carousel-item h5,
+p {
+  color: black;
+}
+/* ////////////VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main {
+  width: 100%;
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center;
+  justify-content: space-between; */
+  
+}
+.main article, form {
+  padding: 10px;
+  border: 8px solid var(--tono1);
+  margin-bottom: 10px;
+  /* gap: 10px; */
+
+}
+
 .information {
-    padding: 20px;
-    border: 1px solid black;
-    flex: 1 1 70%;
-    
-}
+  flex: 1 1 65%;
+  /* Esta forma de generar espacio entre los elementos no esta bien cuando reduzo al maximo*/
+  margin-right: 10px;
 
+}
 .form {
-    padding: 20px;
-    border: 1px solid black;
-    flex: 1 1 30%;
+  padding: 10px;
+  flex: 1 1 30%;
+}
+.informacion{
+    width: 100%;
 }
 
-footer{
-    border: 1px solid black;
-    background-color: #a0acab;
-    margin-bottom: 10px;
+.form{
+    width: 100%;
 }
 
 
@@ -124,7 +155,34 @@ footer{
 
 
 
-.icon-error{
-    width: 24px;
-    height: 24px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  width: 100%;
+  border: 1px solid black;
+  background-color: #a0acab;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 50px;
+}
+
+.icon-error {
+  width: 24px;
+  height: 24px;
 }
