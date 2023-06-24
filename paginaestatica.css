@@ -13,21 +13,21 @@ colores:
 .color5 {color: #a0acab;}
  */
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: white;
+  font-family:'Roboto', sans-serif;
 }
 
 .main-container {
   background-color: white;
   width: 90%;
   max-width: 1800px;
+  min-width: 400px;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -77,17 +77,13 @@ header .links {
   align-items: center;
 }
 
-
-
-
-
-
 /* /////////////////VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
 .carousel-container {
-  padding: 20px;
   background-color: white;
-  width: 400px;
-  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #carouselExampleCaptions {
   width: 400px;
@@ -96,93 +92,58 @@ header .links {
 .carousel-item h5,
 p {
   color: black;
+ font-weight: 600;
 }
 /* ////////////VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .main {
   width: 100%;
   display: flex;
   flex: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /* align-items: center;
-  justify-content: space-between; */
-  
+  gap: 10px;
+
 }
 .main article, form {
   padding: 10px;
   border: 8px solid var(--tono1);
   margin-bottom: 10px;
   /* gap: 10px; */
-
 }
-
 .information {
-  flex: 1 1 65%;
+  flex: 1 1 60%;
   /* Esta forma de generar espacio entre los elementos no esta bien cuando reduzo al maximo*/
-  margin-right: 10px;
-
 }
 .form {
-  padding: 10px;
   flex: 1 1 30%;
-}
-.informacion{
-    width: 100%;
-}
+ }
+ .form p { 
+  text-align: center;
+ }
 
-.form{
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
+.footer-container{
+  background-color: var(--tono1);
   width: 100%;
-  border: 1px solid black;
-  background-color: #a0acab;
+  line-height: 50px;
+  padding: 10px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  line-height: 50px;
+}
+footer p, a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  
+  
 }
 
+
+/* para el form */
 .icon-error {
   width: 24px;
   height: 24px;
 }
+
+
+

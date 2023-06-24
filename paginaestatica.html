@@ -12,10 +12,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <!-- FIN Script y Estilo para Carousel de Bootstrap -->
+    <!-- LINK de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- FIN LINK de Google Fonts -->
 
     <link rel="stylesheet" href="/TP-Final/paginaestatica.css" />
     <title>Cursos Web</title>
 </head>
+
 
 <body>
     <!-- ################### INICIO Div contenedor principal de toda la pagina web  ####################-->
@@ -28,9 +35,10 @@
                 <a href="#">Codea Ya!</a>
             </div>
             <div class="links">
-                <a href="#">Quienes somos</a>
-                <a href="#">Cursos On-Line</a>
-                <a href="#">Contacto</a>
+                <a href="#">-Cursos Ya!-</a>
+                <a href="#">-Desafios-</a>
+                <a href="#">-Soluciones-</a>
+                <a href="#">-Contacto-</a>
             </div>
         </header>
         <!-- ////////////////////// FIN Header ////////////////////////// -->
@@ -47,6 +55,7 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
+
                 </div>
 
                 <div class="carousel-inner">
@@ -71,20 +80,20 @@
                             <h5>Vincula HTML y CSS y dales poder!</h5>
                             <p>Con los tutoriales vas a encontrar todo para darle funcionalidad a tu web!.</p>
                         </div>
-                    </div>
 
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
 
         </section>
         <!--/////////////////////// FIN Seccion carousel /////////////////////////-->
@@ -98,28 +107,24 @@
                 <p>Aprende a programar desde 0 con nuestros cursos para principiantes.</p>
                 <p>Si estas arrancando y queres tener una guia paso a paso para poder salir adelante, te invitamos a que
                     te anotes en nuestros cursos de nivel inicial.</p>
-                <p>Contamos con una plataforma educativa que brindara tutoriales, ejercicios, videos, material de
+                <p>Contamos con una plataforma educativa que te brindara tutoriales, ejercicios, videos, material de
                     consulta, acceso a foros de ayuda y mucho mas.</p>
                 <p>Que esperas? Inscribite y convertite en un experto!</p>
-
             </article>
-            <form class="form">
-                <input id="firstNameInput" type="text" placeholder="Ingrese su nombre">
-                <div id="firstNameError" class="error-container">
-                <img class="icon-error" src="/TP-Final/imagenes/error.png" alt="Icono de Error">
-                <p>Complete su nombre!</p>
-                </div>
+            
+            <form class="form" id="form">
+                <p>Dejanos tus datos y te enviamos la info!</p>
 
-                <input id="lastNameInput" type="text" placeholder="Ingrese su apellido">
-                <!-- <div id="lastNameError" class="error-container"></div> -->
+                <p class="input"><input name="nombre" id="nombre" type="text" placeholder="Nombre" required></p>
+                
+                <p class="input"><input name="apellido" id="apellido" type="text" placeholder="Apellido" required></p>
 
-                <input id="emailInput" type="text" placeholder="Ingrese su email">
-                <!-- <div id="emailError" class="error-container"></div> -->
+                <p class="input"><input name="email" id="email" type="email" placeholder="Email" required></p>
+              
+                <p class="input"><input name="cursos" id="cursos" type="text" placeholder="Que cursos te interesan?" required></p>
 
-                <input id="passInput" type="text" placeholder="Ingrese su contraseña">
-                <!-- <div id="passError" class="error-container"></div> -->
-
-                <input type="submit" value="Iniciar Sesion">
+                <p><input type="submit" value="Solicitar Info" onclick="obtenerDatos()"></p>
+                
             </form>
         </section>
         <!-- /////////////////// Fin Seccion de Informacion y Formulario //////////////////////// -->
@@ -139,13 +144,13 @@
 
         <!-- ///////////////////////// Inicio Footer //////////////////////  -->
         <footer class="footer-container">
-            <p>asdasdas</p>
-            <a href="#">asdasdasd</a>
+            <a href="https://github.com/FavaLucas" target="_blank">-Coded by Lucas Fava-</a></p>
         </footer>
         <!-- ///////////////////////// Fin Footer //////////////////////  -->
 
     </div>
     <!-- ###################  FIN contenedor principal de toda la pagina web ####################-->
+    <script src="/TP-Final/paginaestatica.js"></script>
 </body>
 
 </html>
