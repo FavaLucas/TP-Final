@@ -13,6 +13,9 @@ colores:
 .color5 {color: #a0acab;}
  */
 }
+html{
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -98,8 +101,8 @@ header .links {
 }
 
 #carouselExampleCaptions {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 
 .carousel-item h5,
