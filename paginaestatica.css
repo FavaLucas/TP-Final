@@ -99,6 +99,10 @@ header .links {
   margin-left: auto;
   margin-right: auto;
 }
+/* .carousel-inner{
+  width: 350px;
+  height: 350px;
+} */
 
 #carouselExampleCaptions {
   width: 350px;
