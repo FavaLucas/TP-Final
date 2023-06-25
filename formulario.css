@@ -11,7 +11,8 @@
 }
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: var(--eden);
+    background-image: linear-gradient(0deg, #ffffff 0%, #286585 100%);
+    height: 100vh;
     /* background-image: url(/TP-Final/imagenes/fondoprogramacion.png); */
 }
 .logo{
@@ -22,7 +23,7 @@ body{
 }
 a{
     position:absolute;
-    top: 10px;
+    top: 10px;  
     left: 30px;
     color: var(--alto);
     text-decoration:none;
@@ -94,6 +95,6 @@ form input[type="submit"]:hover{
 #stats{
     margin: 25px;
     font-size: 1.3em;
-    color: var(--bondiBlue);
+    color: var(--eden);
     text-align: center;
 }
