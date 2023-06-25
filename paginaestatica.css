@@ -13,11 +13,13 @@ colores:
 .color5 {color: #a0acab;}
  */
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
@@ -29,6 +31,7 @@ body {
   max-width: 1800px;
   min-width: 400px;
   margin-top: 10px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   /* Opciones Flex -Contenedor Padre de toda la web*/
@@ -36,6 +39,8 @@ body {
   flex: row;
   flex-wrap: wrap;
 }
+
+/* Estilo del Header */
 header {
   background-color: var(--tono1);
   width: 100%;
@@ -47,15 +52,18 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 header .logo img {
   width: 50px;
   vertical-align: top;
 }
+
 header .logo a {
   line-height: 50px;
   color: white;
   text-decoration: none;
 }
+
 header a {
   /* line-height: 50px; */
   color: white;
@@ -66,9 +74,11 @@ header a {
   /* Opciones Flex - Elemento HIJO */
   flex-grow: 1;
 }
+
 header a:hover {
   background-color: var(--tono5);
 }
+
 header .links {
   width: 40%;
   /* Opciones Flex - Contenedor padre de los Links*/
@@ -77,6 +87,7 @@ header .links {
   align-items: center;
 }
 
+/* Estilo del Carousel */
 /* /////////////////VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
 .carousel-container {
   background-color: white;
@@ -85,65 +96,127 @@ header .links {
   margin-left: auto;
   margin-right: auto;
 }
+
 #carouselExampleCaptions {
   width: 400px;
   height: 400px;
 }
+
 .carousel-item h5,
 p {
   color: black;
   font-weight: 600;
 }
+/* .carousel-control-prev, .carousel-control-next {
+  color: black;
+} */
+
 /* ////////////VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
 
+
+/* Estilo del MAIN */
 .main {
-  width: 100%;
+  gap: 10px;
+  margin-bottom: 10px;
   display: flex;
   flex: row;
   flex-wrap: wrap;
-  gap: 10px;
 }
-.main article,
+
+article {
+  padding: 10px;
+  border: 8px solid var(--tono1);
+  flex: 1 1 59%;
+}
+article > div > p{
+ display: block;
+ /* background-color: yellow; */
+
+}
+
 form {
   padding: 10px;
   border: 8px solid var(--tono1);
-  margin-bottom: 10px;
-  /* gap: 10px; */
-}
-.info p{
-  margin-top: 20px;
+  flex: 1 1 40%;
 }
 
 .information {
-  flex: 1 1 60%;
+  align-content: center;
+}
+.div-info{
+  max-height: 100%;
+  align-items: center;
+ justify-content: center;
+}
+/* .img {
+  border-radius: 5px;
+  width:100%;
+  height: 120px;
+} */
 
-  /* Esta forma de generar espacio entre los elementos no esta bien cuando reduzo al maximo*/
-}
+
 .form {
-  flex: 1 1 30%;
-}
-.form p {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
   text-align: center;
 }
 
+
+div .div-form {
+  width: 80%;
+  align-items: center;  
+}
+
+.input {
+  width: 100%;
+  outline: var(--tono1);
+  margin: 0 auto 5px auto;
+  border: 2px solid var(--tono3);
+  padding: 5px;
+}
+
+.input:focus {
+  border-color: var(--tono1);
+}
+
+.btn {
+  text-align: center;
+  width: 50%;
+  background-color: var(--tono3);
+  display: inline-block;
+  padding: 10px 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 var(--tono1);
+  box-shadow: 0 1px rgb(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: var(--tono5);
+}
+
+.btn:active {
+  background-color: var(--tono3);
+}
+
+
+
+
+/* Estilos footer */
 .footer-container {
   background-color: var(--tono1);
   width: 100%;
   line-height: 50px;
   padding: 10px;
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
+
 footer p,
 a {
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
-}
-
-/* para el form */
-.icon-error {
-  width: 24px;
-  height: 24px;
 }

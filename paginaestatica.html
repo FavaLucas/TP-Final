@@ -35,7 +35,7 @@
                 <a href="#">Codea Ya!</a>
             </div>
             <div class="links">
-                <a href="#">-Cursos Ya!-</a>
+                <a href="https://www.w3schools.com/" target="_blank">-Cursos Ya!-</a>
                 <a href="#">-Desafios-</a>
                 <a href="#">-Soluciones-</a>
                 <a href="#">-Contacto-</a>
@@ -104,29 +104,37 @@
         <!-- /////////////////// Inicio Seccion de Informacion y Formulario //////////////////////// -->
         <section class="main">
             <article class="information">
-                <div class="info">
-                <p>Aprende a programar desde 0 con nuestros cursos para principiantes.</p>
-                <p>Si estas arrancando y queres tener una guia paso a paso para poder salir adelante, te invitamos a que
-                    te anotes en nuestros cursos de nivel inicial.</p>
-                <p>Contamos con una plataforma educativa que te brindara tutoriales, ejercicios, videos, material de
-                    consulta, acceso a foros de ayuda y mucho mas.</p>
-                <p>Que esperas? Inscribite y convertite en un experto!</p>
-            </div>
+                <div class="div-info">
+                    <p>Aprende a programar desde 0 con nuestros cursos para principiantes.</p>
+                    <p>Si estas arrancando y queres tener una guia paso a paso para poder salir adelante, te invitamos a
+                        que
+                        te anotes en nuestros cursos de nivel inicial.</p>
+                    <p>Contamos con una plataforma educativa que te brindara tutoriales, ejercicios, videos, material de
+                        consulta, acceso a foros de ayuda y mucho mas.</p>
+                    <p>Que esperas? Inscribite y convertite en un experto!</p>
+                    
+                    <!-- <div class="img-info">
+                        <img src="/fondo.png" class="img">
+                    </div> -->
+                </div>
             </article>
-            
+
             <form class="form" id="form">
-                <p>Dejanos tus datos y te enviamos la info!</p>
+                <div class="div-form">
+                    <p>Dejanos tus datos y te enviamos la info!</p>
 
-                <p class="input"><input name="nombre" id="nombre" type="text" placeholder="Nombre" required></p>
-                
-                <p class="input"><input name="apellido" id="apellido" type="text" placeholder="Apellido" required></p>
+                    <p><input class="input" name="nombre" id="nombre" type="text" placeholder="Nombre" required></p>
 
-                <p class="input"><input name="email" id="email" type="email" placeholder="Email" required></p>
-              
-                <p class="input"><input name="cursos" id="cursos" type="text" placeholder="Que cursos te interesan?" required></p>
+                    <p><input class="input" name="apellido" id="apellido" type="text" placeholder="Apellido" required>
+                    </p>
 
-                <p><input type="submit" value="Solicitar Info" onclick="obtenerDatos()"></p>
-                
+                    <p><input class="input" name="email" id="email" type="email" placeholder="Email" required></p>
+
+                    <p><input class="input" name="cursos" id="cursos" type="text" placeholder="Que cursos te interesan?"
+                            required></p>
+
+                    <p><input type="submit" class="btn btn-color" value="Solicitar Info" onclick="obtenerDatos()"></p>
+                </div>
             </form>
         </section>
         <!-- /////////////////// Fin Seccion de Informacion y Formulario //////////////////////// -->
