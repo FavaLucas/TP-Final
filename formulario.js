@@ -32,9 +32,12 @@ list.addEventListener('click',(event)=>{
     }
 });
 
+
+
 let updateStats = () =>{
     let element = list.querySelectorAll('div');
     let checkbox = list.querySelectorAll('input[type="checkbox"]:checked');
+    
     stats.innerHTML = `<p>Temario en curso: ${element.length} Completos: ${checkbox.length}</p>`
 };
 
