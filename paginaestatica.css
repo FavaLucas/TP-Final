@@ -27,7 +27,7 @@ html {
 
 body {
   background-color: white;
-  
+
   /* background-color: white; */
   font-family: "Roboto", sans-serif;
 }
@@ -35,6 +35,11 @@ body {
 .main-container {
   /* Color grandiente lo obtengo de: https://cssgradient.io/gradient-backgrounds/ */
   background-image: linear-gradient(0deg, #ffffff 0%, #286585 100%);
+
+  /* Sombra de la pagina */
+  box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
+  -webkit-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
+  -moz-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
 
   /* Fin copia de gradiente */
   width: 90%;
@@ -56,6 +61,16 @@ header {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
+/* Efecto de profundidad */
+/* box-shadow: 17px 20px 15px -2px rgba(0,0,0,0.62) inset;
+-webkit-box-shadow: 17px 20px 15px -2px rgba(0,0,0,0.62) inset;
+-moz-box-shadow: 17px 20px 15px -2px rgba(0,0,0,0.62) inset; */
+
+/* box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
+-webkit-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
+-moz-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86); */
+
+
   /* Opciones Flex - Contenedor Padre de todos los elementos del header */
   display: flex;
   align-items: center;
@@ -124,6 +139,10 @@ p {
   color: black;
   font-weight: 600;
 }
+/* revisar estoooooo  */
+.carousel-caption{
+  position: inherit;
+}
 /* .carousel-control-prev, .carousel-control-next {
   color: black;
 } */
@@ -132,6 +151,12 @@ p {
 
 /* //////////////////////// Estilo del MAIN //////////////////////// */
 .main {
+/* Sombreado */
+/* box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
+-webkit-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
+-moz-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86); */
+
+
   width: 100%;
   gap: 10px;
   margin-bottom: 10px;
@@ -139,7 +164,6 @@ p {
   flex: row;
   flex-wrap: wrap;
 }
-
 
 article {
   border-radius: 10px;
@@ -232,7 +256,6 @@ div .div-form {
 
 footer p,
 a {
-  
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
