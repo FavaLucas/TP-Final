@@ -1,0 +1,48 @@
+.encabezado {
+  background-color: #0c5e8e;
+  color: white;
+  padding: 20px 0px;
+}
+
+.encabezado p {
+  color: gold;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contenido {
+  margin: 0% 20%;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contenido img {
+  width: 800px;
+  height: 450px;
+}
+
+.item-fomulario {
+  padding: 10px 20px;
+}
+
+.item-fomulario label {
+  margin-right: 10px;
+  min-width: 135px;
+}
+
+.botonera {
+  padding: 10px 20px;
+}
+
+.mensaje-error {
+  color: red;
+}
+
+.contenido-tabla {
+  padding: 20px 10px;
+}
+
+.tarea-pendiente td {
+  color: orangered;
+}
