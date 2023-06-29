@@ -1,4 +1,3 @@
-
 //Variables para guardar el elemento input id: input-area
 const inputTarea = document.getElementById("input-tarea");
 //Variables para guardar el elemento ul id: list-container que contendra todas las tareas dentro
@@ -22,6 +21,7 @@ function agregarTarea() {
         //Creamos un elemento span y como innerHTML (nombre del span ponemos una X (u00d7))
         let span = document.createElement("span");
         span.innerHTML = "\u00d7"
+
         //Al mismo li que se creo se le carga ese span con la x
         li.appendChild(span);
         
@@ -59,7 +59,7 @@ listContainer.addEventListener("click", function(e){
 function guardarTareas(){
     localStorage.setItem("tareas", listContainer.innerHTML)
 }
-
+S
 function mostrarTareasGuardadas(){
     listContainer.innerHTML = localStorage.getItem("tareas");
 }
@@ -71,7 +71,7 @@ function actulizarEstadoTareas(){
 
     let stats = document.getElementById("stats");
 
-    stats.innerHTML = `<p>Cantidad de Cursos: ${pendientes.length} - Cursos Finalizados: ${finalizadas.length}</p>`
+    stats.innerHTML = `<div><p class="estilo-estados">En curso: ${pendientes.length} - Finalizados: ${finalizadas.length}</p></div>`
 };
 
 

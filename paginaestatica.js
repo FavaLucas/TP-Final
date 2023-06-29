@@ -11,6 +11,7 @@
 const form = document.getElementById("form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
+
 });
 
 function obtenerDatos() {
@@ -23,3 +24,36 @@ function obtenerDatos() {
   console.log(email);
   console.log(cursos);
 }
+
+
+
+
+
+// // agregar validacion de jose
+// const enviarFormulario = () => {
+//   let formularioCorrecto = true;
+//   const nombreInput = document.getElementById("nombre");
+//   // .trim quita los espacios en blanco
+//   if (nombreInput.value.trim() == "") {
+//   //  Error de required
+//   document.getElementById("error-nombre").innerHTML = "El nombre es requerido"
+//   formularioCorrecto = false;
+//   } else if (nombreInput.value.trim().length < 5){
+//     document.getElementById("error-nombre").innerHTML = "El nombre debe tener un minimo de 4 caracteres"
+//     formularioCorrecto = false;
+//   } else {
+//     document.getElementById("error-nombre").innerHTML = ""
+//   }
+// const inicializarJs = () =>
+
+
+
+
+
+
+
+
+
+
+
+

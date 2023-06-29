@@ -1,0 +1,25 @@
+.encabezado{
+    background-color: #5d5dcf;
+    color: white;
+    padding: 20px 0px;
+}
+
+.contenido{
+    margin: 0% 20%;
+    /* background-color: #b1eb77; */
+    border-left: 1px solid #8f8f8f;
+    border-right: 1px solid #8f8f8f;
+}
+
+.contenido img {
+    width: 800px;
+    height: 450px;
+}
+
+.item-formulario{
+    padding: 10px 20px;
+}
+
+.item-formulario label {
+    margin-right: 10px;
+}

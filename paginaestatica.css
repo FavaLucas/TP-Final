@@ -92,6 +92,7 @@ header .logo a {
 
 header a {
   /* line-height: 50px; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
@@ -119,10 +120,13 @@ header .links {
 .carousel-container {
   /* background-color: white; */
 
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* .carousel-inner{
   width: 350px;
@@ -134,15 +138,18 @@ header .links {
   height: 350px;
 }
 
+
+
 .carousel-item h5,
 p {
-  color: black;
+  color: white;
   font-weight: 600;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 /* revisar estoooooo  */
-.carousel-caption{
+/* .carousel-caption{
   position: inherit;
-}
+} */
 /* .carousel-control-prev, .carousel-control-next {
   color: black;
 } */
@@ -156,13 +163,15 @@ p {
 -webkit-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
 -moz-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86); */
 
-
+  
   width: 100%;
+  padding: 10px;
   gap: 10px;
   margin-bottom: 10px;
   display: flex;
   flex: row;
   flex-wrap: wrap;
+  
 }
 
 article {
@@ -225,13 +234,13 @@ div .div-form {
   color: white;
   font-size: 1.3rem;
   text-align: center;
-  width: 50%;
+  width: 60%;
   background-color: var(--tono1);
   display: inline-block;
   padding: 10px 5px;
   text-decoration: none;
   text-shadow: 0 1px 0 var(--tono1);
-  box-shadow: 0 1px rgb(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .btn:hover {
@@ -256,6 +265,8 @@ div .div-form {
 
 footer p,
 a {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 5px 10px;
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
