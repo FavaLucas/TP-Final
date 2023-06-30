@@ -3,21 +3,21 @@ const esEmailValido = (email) => {
   return emailRegex.test(email)
 }
 
-const validarNombre = () => {
-  const nombreInput = document.getElementById('nombre');
-  if (nombreInput.value.trim() == "") {
-    // error de required
-    document.getElementById('error-nombre').innerHTML = "El nombre es requerido";
-    nombreInput.classList.add('is-invalid');
-  } else if (nombreInput.value.trim().length < 5) {
-    // error de minLength
-    document.getElementById('error-nombre').innerHTML = "El nombre debe tener al menos 5 caracteres";
-    nombreInput.classList.add('is-invalid');
-  } else {
-    document.getElementById('error-nombre').innerHTML = "";
-    nombreInput.classList.remove('is-invalid');
-  }
-}
+// const validarNombre = () => {
+//   const nombreInput = document.getElementById('nombre');
+//   if (nombreInput.value.trim() == "") {
+//     // error de required
+//     document.getElementById('error-nombre').innerHTML = "El nombre es requerido";
+//     nombreInput.classList.add('is-invalid');
+//   } else if (nombreInput.value.trim().length < 5) {
+//     // error de minLength
+//     document.getElementById('error-nombre').innerHTML = "El nombre debe tener al menos 5 caracteres";
+//     nombreInput.classList.add('is-invalid');
+//   } else {
+//     document.getElementById('error-nombre').innerHTML = "";
+//     nombreInput.classList.remove('is-invalid');
+//   }
+// }
 
 
 const enviarFormulario = () => {
@@ -53,11 +53,11 @@ const enviarFormulario = () => {
     console.log("Nombre:", nombreInput.value);
     console.log("Email:", emailInput.value);
     console.log("Recibe Notificaciones:", notificaciones.checked);
-  } else {
+  } else 
     console.log("Formulario incorrecto")
   }
 
-}
+
 
 const inicializarJs = () => {
   const boton = document.getElementById("enviar-btn");

@@ -5,14 +5,6 @@
   --tono4: #7c989d;
   --tono5: #a0acab;
   --tono6: #ffffff;
-  /*
-colores:
-.color1 {color: #104f7c;}
-.color2 {color: #286585;}
-.color3 {color: #527f90;}
-.color4 {color: #7c989d;}
-.color5 {color: #a0acab;}
- */
 }
 html {
   scroll-behavior: smooth;
@@ -27,8 +19,6 @@ html {
 
 body {
   background-color: white;
-
-  /* background-color: white; */
   font-family: "Roboto", sans-serif;
 }
 
@@ -37,9 +27,9 @@ body {
   background-image: linear-gradient(0deg, #ffffff 0%, #286585 100%);
 
   /* Sombra de la pagina */
-  box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
-  -webkit-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
-  -moz-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
+  box-shadow: 46px 37px 42px 13px rgba(0, 0, 0, 0.86);
+  -webkit-box-shadow: 46px 37px 42px 13px rgba(0, 0, 0, 0.86);
+  -moz-box-shadow: 46px 37px 42px 13px rgba(0, 0, 0, 0.86);
 
   /* Fin copia de gradiente */
   width: 90%;
@@ -49,9 +39,9 @@ body {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  /* Opciones Flex -Contenedor Padre de toda la web*/
+
   display: flex;
-  flex: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -59,23 +49,11 @@ body {
 header {
   background-color: var(--tono1);
   width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-/* Efecto de profundidad */
-/* box-shadow: 17px 20px 15px -2px rgba(0,0,0,0.62) inset;
--webkit-box-shadow: 17px 20px 15px -2px rgba(0,0,0,0.62) inset;
--moz-box-shadow: 17px 20px 15px -2px rgba(0,0,0,0.62) inset; */
-
-/* box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
--webkit-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
--moz-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86); */
-
-
-  /* Opciones Flex - Contenedor Padre de todos los elementos del header */
+  padding: 20px 30px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -90,36 +68,31 @@ header .logo a {
   text-decoration: none;
 }
 
+header .links {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 15px;
+}
+
 header a {
-  /* line-height: 50px; */
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: white;
+  text-align: center;
   text-decoration: none;
   font-size: 1.3rem;
   padding: 10px;
-  text-align: center;
-  /* Opciones Flex - Elemento HIJO */
   flex-grow: 1;
 }
 
 header a:hover {
   background-color: var(--tono3);
-  /*   */
-}
-
-header .links {
-  width: 40%;
-  /* Opciones Flex - Contenedor padre de los Links*/
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 /* Estilo del Carousel */
-/* /////////////////VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
 .carousel-container {
-  /* background-color: white; */
-
   margin-top: 60px;
   margin-bottom: 60px;
   margin-left: auto;
@@ -128,17 +101,11 @@ header .links {
   flex-direction: column;
   justify-content: center;
 }
-/* .carousel-inner{
-  width: 350px;
-  height: 350px;
-} */
 
 #carouselExampleCaptions {
   width: 350px;
   height: 350px;
 }
-
-
 
 .carousel-item h5,
 p {
@@ -146,24 +113,9 @@ p {
   font-weight: 600;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
-/* revisar estoooooo  */
-/* .carousel-caption{
-  position: inherit;
-} */
-/* .carousel-control-prev, .carousel-control-next {
-  color: black;
-} */
-
-/* ////////////VER COMO MANEJAR EL CAROUSELLLLLLLLLLL */
 
 /* //////////////////////// Estilo del MAIN //////////////////////// */
 .main {
-/* Sombreado */
-/* box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
--webkit-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86);
--moz-box-shadow: 46px 37px 42px 13px rgba(0,0,0,0.86); */
-
-  
   width: 100%;
   padding: 10px;
   gap: 10px;
@@ -171,7 +123,6 @@ p {
   display: flex;
   flex: row;
   flex-wrap: wrap;
-  
 }
 
 article {
@@ -183,7 +134,6 @@ article {
 
 article > div > p {
   display: block;
-  /* background-color: yellow; */
 }
 
 form {
@@ -240,7 +190,8 @@ div .div-form {
   padding: 10px 5px;
   text-decoration: none;
   text-shadow: 0 1px 0 var(--tono1);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .btn:hover {
@@ -251,23 +202,39 @@ div .div-form {
   background-color: var(--tono3);
 }
 
-/* //////////////////////// Estilos footer //////////////////////// */
-.footer-container {
-  border-radius: 10px;
-  background-color: var(--tono1);
-  width: 100%;
-  line-height: 50px;
-  padding: 10px;
+div .input-datos {
+  font-size: 0.8rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  color: red;
+  border: none;
+  padding: 5px;
+}
+div .input-datos p {
+  margin: 0;
 }
 
-footer p,
-a {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+/* //////////////////////// Estilos footer //////////////////////// */
+
+.footer-container {
+  width: 100%;
+  /* border-radius: 10px; */
+  background-color: var(--tono1);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   padding: 5px 10px;
   text-decoration: none;
+  text-align: center;
   color: white;
   font-size: 1.3rem;
+  /* flex-grow: 1;
+  display: block; */
 }

@@ -27,6 +27,7 @@ https://www.flaticon.es/
 https://cssgenerator.org/box-shadow-css-generator.html
 https://getcssscan.com/css-box-shadow-examples
 https://fonts.google.com/
+https://colormagic.app/palette/GRoz3GgJaYclxYAmC0hx
 
 -Para ayudarme con Flex:
 https://www.youtube.com/watch?v=8w5mfbMH4Gw
