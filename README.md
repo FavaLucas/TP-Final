@@ -1,10 +1,9 @@
-<!-- /*------------------------------------------------------------------------------------------------------------------------------------------------------*/ -->
-TP-Final, primer cuatrimestre
-Fecha de entrega: Lunes 03/07/2023
--- Autor: Lucas Fava
+<!-- /*------------------------------------------------------------------------------------------------------------------*/ -->
+TP-Final, primer cuatrimestre.
+Fecha de presentacion: Lunes 03/07/2023.
+-- Autor: Lucas Fava.
 
-<!-- /*------------------------------------------------------------------------------------------------------------------------------------------------------*/ -->
-
+<!-----------------------------------------------------------------------------------------------------------------------*/ -->
 Objetivo:
 Desarrolla una aplicación web de gestión de tareas (To-Do List) utilizando TypeScript, HTML, CSS y JavaScript.
 
@@ -16,27 +15,20 @@ Parte 2 - Listado de tareas dinámico: Crea un listado de tareas utilizando HTML
 
 Condiciones de entrega: Entregar en Github Presentar en clase (no mas de 10min) Entregar uno por alumno (pueden trabajar en conjunto pero no entregar exactamente lo mismo) Puede ser una pagina estatica con el gestor de tareas o puede ser solamente el gestor de tareas.
 
-<!-- /*------------------------------------------------------------------------------------------------------------------------------------------------------*/ -->
-
+<!-- /*----------------------------------------------------------------------------------------------------------------*/ -->
+Ademas de lo aprendido en clase y lo que consta en los pdf que tenemos de bibliografia.
 Documentacion, Aplicaciones y Videos externos utilizados para poder llevar adelante la tarea:
- (Ademas de lo aprendido en clase y lo que consta en los pdf que tenemos de bibliografia)
 
 Elementos externos utilizados:
-https://getbootstrap.com/docs/5.3/getting-started/introduction/
-https://www.flaticon.es/
-https://cssgenerator.org/box-shadow-css-generator.html
-https://getcssscan.com/css-box-shadow-examples
-https://fonts.google.com/
-https://colormagic.app/palette/GRoz3GgJaYclxYAmC0hx
+https://getbootstrap.com/docs/5.3/getting-started/introduction/ - Carousel + Navbar
+https://www.flaticon.es/ - Iconos
+https://cssgenerator.org/box-shadow-css-generator.html - Bordes y Sombreados
+https://getcssscan.com/css-box-shadow-examples - Bordes y Sombreados
+https://fonts.google.com/ - Fuentes
+https://colormagic.app/palette/GRoz3GgJaYclxYAmC0hx - Paleta de Color
+https://www.youtube.com/watch?v=8w5mfbMH4Gw - Flex
+https://www.youtube.com/watch?v=BqJUh7HrPUE - To-Do List
+https://www.youtube.com/watch?v=G0jO8kUrg-I - To-Do List
+https://www.youtube.com/watch?v=G0jO8kUrg-I - Localstorage
 
--Para ayudarme con Flex:
-https://www.youtube.com/watch?v=8w5mfbMH4Gw
-
--Para ayudarme con el To-Do List:
-https://www.youtube.com/watch?v=BqJUh7HrPUE
-https://www.youtube.com/watch?v=G0jO8kUrg-I
-
--Para ayudarme con el localstorage:
-https://www.youtube.com/watch?v=G0jO8kUrg-I
-
-<!-- /*------------------------------------------------------------------------------------------------------------------------------------------------------*/ -->
+<!-- /*------------------------------------------------------------------------------------------------------------------*/ -->

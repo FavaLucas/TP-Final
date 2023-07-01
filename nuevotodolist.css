@@ -87,7 +87,7 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(/imagenes/unchecked.png);
+    background-image: url(/TP-Final/imagenes/unchecked.png);
     background-size: cover;
     background-position: center;
     top: 7px;
@@ -99,7 +99,7 @@ ul li.checked{
     text-decoration: line-through;
 }
 ul li.checked::before{
-    background-image: url(/imagenes/nuevoPendiente.png);
+    background-image: url(/TP-Final/imagenes/nuevoPendiente.png);
 }
 
 ul li span {
