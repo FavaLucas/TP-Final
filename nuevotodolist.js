@@ -20,6 +20,7 @@ function agregarTarea() {
     span.innerHTML = "X";
     //Al mismo li que se creo se le carga ese span con la x
     li.appendChild(span);
+
     actulizarEstadoTareas();
   }
   //Dejo en blancl el input despues de crear el elemento
@@ -30,6 +31,7 @@ function agregarTarea() {
 
 //Si el usuario realiza un click en algun LI se le cambia el estado a checked o unchecked
 //Si el usuario hace click en el boton de elimiar, se elimina el padre que lo contiene (todo el li)
+
 listContainer.addEventListener(
   "click",
   function (e) {
@@ -42,8 +44,7 @@ listContainer.addEventListener(
       guardarTareas();
       actulizarEstadoTareas();
     }
-  },
-);
+  }, false);
 
 //funcion que guarda los datos en el localStorage
 function guardarTareas() {
@@ -69,7 +70,7 @@ actulizarEstadoTareas();
 
 // let nuevaTarea = `
 //     <li class="checked"> ${inputTarea.value}
-//         <span><img clas"span-img" src="/imagenes/nuevoBorrar.png"></span>
+//         <span><img clas"span-img" src="/imagenes/gomaChica.png"></span>
 //     </li>`
-
-// listContainer.innerHTML += nuevaTarea
+// close.log(nuevaTarea);
+// listContainer.innerHTML += nuevaTarea;
