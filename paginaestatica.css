@@ -5,6 +5,7 @@
   --tono4: #7c989d;
   --tono5: #a0acab;
   --tono6: #ffffff;
+  --tono7: #ff0000;
 }
 html {
   scroll-behavior: smooth;
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: var(--tono6);
   font-family: "Roboto", sans-serif;
 }
 
@@ -39,7 +40,6 @@ body {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -49,7 +49,7 @@ body {
 header {
   background-color: var(--tono1);
   width: 100%;
-  padding: 20px 30px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -60,12 +60,15 @@ header {
 header .logo img {
   width: 50px;
   vertical-align: top;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 header .logo a {
   line-height: 50px;
-  color: white;
+  color: var(--tono6);
   text-decoration: none;
+  padding: 10px;
 }
 
 header .links {
@@ -79,11 +82,12 @@ header .links {
 header a {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  color: white;
+  color:var(--tono6);
   text-align: center;
   text-decoration: none;
   font-size: 1.3rem;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   flex-grow: 1;
 }
 
@@ -109,7 +113,7 @@ header a:hover {
 
 .carousel-item h5,
 p {
-  color: white;
+  color: var(--tono6);
   font-weight: 600;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
@@ -167,8 +171,13 @@ div .div-form {
   width: 80%;
   align-items: center;
 }
+
+div .div-form p {
+  margin-bottom: 5px;
+}
+
 .input {
-  border-radius: 10 px;
+  border-radius: 10px;
   width: 100%;
   outline: var(--tono1);
   margin: 0 auto 5px auto;
@@ -181,7 +190,7 @@ div .div-form {
 
 .btn {
   border-radius: 10px;
-  color: white;
+  color: var(--tono6);
   font-size: 1.3rem;
   text-align: center;
   width: 60%;
@@ -206,7 +215,7 @@ div .input-datos {
   font-size: 0.8rem;
   display: flex;
   flex-direction: column;
-  color: red;
+  color: var(--tono7);
   border: none;
   padding: 5px;
 }
@@ -218,9 +227,8 @@ div .input-datos p {
 
 .footer-container {
   width: 100%;
-  /* border-radius: 10px; */
   background-color: var(--tono1);
-  padding: 20px 30px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -230,20 +238,20 @@ div .input-datos p {
 footer a {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  padding: 5px 10px;
+  padding: 10px;
   text-decoration: none;
   text-align: center;
-  color: white;
+  color: var(--tono6);
   font-size: 1.3rem;
   /* flex-grow: 1;
   display: block; */
 }
 
 #whatsapp img {
-	position: fixed;
-	bottom: 12px;
-	right: 12px;
-	z-index: 10;
-	width: 80px;
+	/* position: fixed;
+	bottom: 100px;
+	right: 38px;
+	z-index: 10; */
+	width: 60px;
 	height: auto;
 }

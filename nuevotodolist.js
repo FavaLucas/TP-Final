@@ -25,23 +25,17 @@ function agregarTarea() {
         //Al mismo li que se creo se le carga ese span con la x
         li.appendChild(span);
         
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-        // INICIO PRUEBA CARGAR ADEMAS UNA IMAGENNNN
-        // let imgDiv = document.createElement("div");
-        // imgDiv.style.backgroundImage = "TP-Final\imagenes\nuevoBorrar.png"
-        // li.appendChild(imgDiv);
-        // FIN DE PRUEBA PRUEBAAAA
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
         actulizarEstadoTareas();
     }
     //Dejo en blancl el input despues de crear el elemento
     inputTarea.value = "";
-    // llamado a funcion para que guarde los datos
     //llamo a la funcion para guardar los datos en el localStorage
     guardarTareas();
     
 }
 
+//Si el usuario realiza un click en algun LI se le cambia el estado a checked o unchecked
+//Si el usuario hace click en el boton de elimiar, se elimina el padre que lo contiene (todo el li)
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
@@ -59,13 +53,13 @@ listContainer.addEventListener("click", function(e){
 function guardarTareas(){
     localStorage.setItem("tareas", listContainer.innerHTML)
 }
-S
+//Recupera las tareas del localstorage y las muestra en pantalla.
 function mostrarTareasGuardadas(){
     listContainer.innerHTML = localStorage.getItem("tareas");
 }
 
+//Funcion para actualizar el estado de la lista de las tareas (finalizadas o pendientes)
 function actulizarEstadoTareas(){
-    console.log("hola");
     let pendientes = document.querySelectorAll('li');
     let finalizadas = document.querySelectorAll('.checked');
 

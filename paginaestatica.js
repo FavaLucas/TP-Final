@@ -75,12 +75,6 @@ function borrarDatos() {
   document.getElementById("cursos").value = "";
 }
 
-//   let inputs = document.querySelectorAll(".input");
-//   for (let i = 0; i< inputs.length; i++) {
-//     inputs[i].value = "";
-// }
-
-
 
 
 //Idea de mi JS
@@ -88,6 +82,6 @@ function borrarDatos() {
 // Al generarse el onclick en el boton submit se llama a la funcion obtenerDatos(), lo que se hace es capturar la informacion de cada campo del formulario y mostrarlo en crossOriginIsolated, sin importar lo que el usuario haya ingresado, es decir sea correcto o no. Luego la funcion valida los compos del formulario segun los criterios establecidos y aposterior se borran los inputs para que el formulario vuelva a quedar vacio 
 
 
-// Falta validar datos del formulario
+
 // Intentat utilizar funciones flecha
 
