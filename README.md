@@ -16,8 +16,8 @@ Parte 2 - Listado de tareas dinámico: Crea un listado de tareas utilizando HTML
 Condiciones de entrega: Entregar en Github Presentar en clase (no mas de 10min) Entregar uno por alumno (pueden trabajar en conjunto pero no entregar exactamente lo mismo) Puede ser una pagina estatica con el gestor de tareas o puede ser solamente el gestor de tareas.
 
 <!-- /*----------------------------------------------------------------------------------------------------------------*/ -->
-Ademas de lo aprendido en clase y lo que consta en los pdf que tenemos de bibliografia.
 Documentacion, Aplicaciones y Videos externos utilizados para poder llevar adelante la tarea:
+
 
 Elementos externos utilizados:
 https://getbootstrap.com/docs/5.3/getting-started/introduction/ - Carousel + Navbar
